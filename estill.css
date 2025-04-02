@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #429e04, #0099ff, #ffee00);
+    overflow: hidden;
+  }
+  
+  .calculator {
+    background-color: #38383863; /* Ajustado para combinar mejor con el fondo */
+    border-radius: 15px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Hacerla un poco más ancha */
+    padding: 20px; /* Ajustar el relleno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .display {
+    width: 100%;
+    height: 60px; /* Ajustar altura */
+    font-size: 2em; /* Reducir tamaño de fuente */
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff4b; /* Ajustado para combinar mejor con el fondo */
+    color: #ffffff; /* Mantener contraste */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .button {
+    background-color: #18b5bb5e; /* Ajustado para combinar mejor con el fondo */
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em; /* Reducir tamaño de fuente */
+    padding: 15px; /* Ajustar relleno */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:hover {
+    background-color: #00ffea; /* Ajustado para combinar mejor con el fondo */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .operator {
+    background-color: #00ff403f; /* Ajustado para combinar mejor con el fondo */
+  }
+  
+  .operator:hover {
+    background-color: #00ff6a; /* Ajustado para combinar mejor con el fondo */
+  }
+  
+  .equals {
+    background-color: #00ffb342; /* Ajustado para combinar mejor con el fondo */
+    grid-column: span 2;
+    font-weight: bold;
+  }
+  
+  .equals:hover {
+    background-color: #00ffaa; /* Ajustado para combinar mejor con el fondo */
+    transform: translateY(-5px);
+  }
+  
+  button:active {
+    background-color: #c1c1c1;
+    transform: translateY(2px);
+  }
+  
+  @media (max-width: 400px) {
+    .calculator {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .display {
+      font-size: 2em;
+    }
+  
+    .button {
+      font-size: 1.5em;
+      padding: 18px;
+    }
+  }
