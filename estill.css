@@ -1,0 +1,82 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para el body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  /* Estilo general de la calculadora */
+  .calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo de la pantalla de la calculadora */
+  .display {
+    margin-bottom: 20px;
+  }
+  
+  .display input {
+    width: 100%;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: right;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+  }
+  
+  .display input:disabled {
+    background-color: #444;
+  }
+  
+  /* Estilo de los botones */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .button {
+    background-color: #ff6347;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background-color: #ff4500;
+    transform: translateY(-5px);
+  }
+  
+  .button:active {
+    background-color: #ff6347;
+    transform: translateY(0);
+  }
+  
+  /* Estilo para el botón igual */
+  button:last-child {
+    background-color: #32cd32;
+  }
+  
